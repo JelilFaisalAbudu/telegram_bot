@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.8)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -12,10 +13,18 @@ GEM
     equalizer (0.0.11)
     excon (0.74.0)
     ice_nine (0.11.2)
+    json (1.8.6)
+    mime-types (1.25.1)
+    rest-client (1.6.14)
+      mime-types (~> 1.16)
     telegram_bot (0.0.8)
       excon (>= 0.30.0)
       virtus (>= 1.0.0)
     thread_safe (0.3.6)
+    unirest (1.1.2)
+      addressable (~> 2.3.5)
+      json (~> 1.8.1)
+      rest-client (~> 1.6.7)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -27,6 +36,7 @@ PLATFORMS
 
 DEPENDENCIES
   telegram_bot
+  unirest
 
 BUNDLED WITH
    2.1.4
