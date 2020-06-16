@@ -22,7 +22,7 @@ class Bot
       message.reply do |reply|
         reply.text = case @commamd.downcase
                      when /start/i
-                       "Hey, I\'m still unnder experimentation. But I can do quite a few interesting things. Try typing any of these commands:\n/hello\n/qoute\n/latest news"
+                       "Hey, I\'m still unnder experimentation. But I can do quite a few interesting things. Try typing any of these commands:\n/hello\n/quote\n/latest news"
                      when /hello/i
                        "Hello, #{message.from.first_name}"
                      when /quote/i
@@ -33,7 +33,7 @@ class Bot
                        news = News.new
                        news.send_news
                      else
-                       "I have no idea what #{command.inspect} means. I suggest you type commands like\n/hello\n/quote\n/latest news"
+                       "Oops... I'm still learning. I have no idea what #{command.inspect} means. I suggest you type commands like\n/hello\n/quote\n/latest news for now."
                      end
         reply.send_with(@bot)
       end
