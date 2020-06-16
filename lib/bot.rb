@@ -1,4 +1,4 @@
-# rubocop :disable Metrics/MethodLength, Latout/LineLength
+# rubocop :disable Metrics/MethodLength, Layout/LineLength
 require 'telegram_bot'
 require_relative './news.rb'
 
