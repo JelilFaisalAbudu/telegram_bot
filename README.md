@@ -10,12 +10,19 @@
 
 - [Preface](#preface)
 - [Purpose](#purpose)
+- [Features](#features)
 - [Built With](#built-with)
 - [Quick Start](#quick-start)
 - [Dependencies](#dependencies)
 - [Testing](#testing)
 - [Author](#author)
 - [Contributing](#contributing)
+
+## Features
+
+- The bot has two main features
+- Ability to give you the latest news updates from the BBC website.
+- It also gives motivational quotes with the author's name
 
 ## Built With
 
