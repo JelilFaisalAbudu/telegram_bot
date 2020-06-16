@@ -2,7 +2,7 @@ require 'telegram_bot'
 require_relative './news.rb'
 
 class Bot
-  TOKEN = '1261796457:AAHJFoxarJiJdGykfpMR_ReUMav47omJlQI'
+  TOKEN = '1261796457:AAHJFoxarJiJdGykfpMR_ReUMav47omJlQI'.freeze
   attr_reader :bot
   attr_accessor :command, :get_updates
   def initialize
