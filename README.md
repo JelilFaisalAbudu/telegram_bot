@@ -13,10 +13,9 @@
 - [Built With](#built-with)
 - [Quick Start](#quick-start)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [Acknowledgments](#acknowledgments)
+- [Testing](#testing)
 - [Author](#author)
-- [License](#license)
+- [Contributing](#contributing)
 
 ## Built With
 
@@ -29,13 +28,22 @@
 
 - Install Ruby in your system. To install Ruby, you can read the [Documentation](https://www.ruby-lang.org/en/documentation/installation/)
 - Download it as a [Zip File](https://github.com/JelilFaisalAbudu/telegram_bot/archive/master.zip). If you have installed Git in your system, you can clone it using **git clone** command.
+- Navigate to your telegram account if you have one. Or create new telegram account.
+- Create a new bot with the help of BotFather. Use this documentation if you are facing challenges [New Bot](https://core.telegram.org/bots#6-botfather).
+- Obtain your new bot's token.
+- Go to the Bot class and assign your token to
+
+```console
+  TOKEN
+```
+
+variable.
+
 - For Windows users, open Command Prompt and run:
 
   ```console
-
   C:\>cd telegram_bot
   C:\ ../telegram_bot> run ruby bin/main.rb
-
   ```
 
 - For Linux and Mac users, open a Terminal and run:
@@ -45,23 +53,16 @@
    ruby bin/main.rb
   ```
 
-- Navigate to your telegram account
+- On your telegram account search for your bot's name:
 
-- On your telegram account search for :
-
-  ```console
-   @JelilBot
-
-  ```
-
-- Then press the /START button and follow the steps given
+- Then press the /START button begin interacting.
 
 ## Dependencies
 
 - rspec
 - telegram_bot
 
-## How to Test the Methods In the Classes
+## Testing
 
 Install Rspec gem in your system. To do this:
 
