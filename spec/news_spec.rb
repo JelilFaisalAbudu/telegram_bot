@@ -1,5 +1,4 @@
 require_relative '../lib/news.rb'
-require 'json'
 
 describe News do
   let(:news) { News.new }

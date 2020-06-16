@@ -3,22 +3,21 @@ require 'telegram_bot'
 require_relative './news.rb'
 
 class Bot
-  TOKEN = '1261796457:AAHJFoxarJiJdGykfpMR_ReUMav47omJlQI'.freeze
+  TOKEN = '1261796457:AAHJFoxarJiJdGykfpMR_ReUMav47omJlQI'
   attr_reader :bot
-  attr_accessor :command, :get_updates
+  attr_accessor :get_updates
   def initialize
     @bot = TelegramBot.new(token: TOKEN)
-    @commamd = nil
     @get_updates = update
   end
 
   def update
     @bot.get_updates(fail_silently: true) do |message|
       # "@#{message.from.username}: #{message.text}"
-      @commamd = message.get_command_for(@bot)
+      command = message.get_command_for(@bot)
 
       message.reply do |reply|
-        reply.text = case @commamd.downcase
+        reply.text = case command.downcase
                      when /start/i
                        "Hey, I\'m still unnder experimentation. But I can do quite a few interesting things. Try typing any of these commands:\n/hello\n/quote\n/latest news"
                      when /hello/i
@@ -31,7 +30,7 @@ class Bot
                        news = News.new
                        news.send_news
                      else
-                       "Oops... I'm still learning. I have no idea what '#{@command.inspect}' means. I suggest you type commands like\n/hello\n/quote\n/latest news for now."
+                       "Oops... I'm still learning. I have no idea what #{command.inspect} means. I suggest you type commands like\n/hello\n/quote\n/latest news for now."
                      end
         reply.send_with(@bot)
       end
