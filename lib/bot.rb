@@ -31,7 +31,7 @@ class Bot
                        news = News.new
                        news.send_news
                      else
-                       "Oops... I'm still learning. I have no idea what #{command.inspect} means. I suggest you type commands like\n/hello\n/quote\n/latest news for now."
+                       "Oops... I'm still learning. I have no idea what '#{@command.inspect}' means. I suggest you type commands like\n/hello\n/quote\n/latest news for now."
                      end
         reply.send_with(@bot)
       end
