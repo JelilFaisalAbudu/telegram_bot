@@ -37,5 +37,3 @@ class Bot
     end
   end
 end
-
-# rubocop :enable Metrics/AbcSize, Metrics/MethodLength, Style/Documentation
