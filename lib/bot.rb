@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-# rubocop :disable Metrics/AbcSize, Metrics/MethodLength, Style/Documentation
 require 'telegram_bot'
 require_relative './news.rb'
 
