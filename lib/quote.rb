@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'telegram_bot'
 require 'net/http'
 require 'json'
