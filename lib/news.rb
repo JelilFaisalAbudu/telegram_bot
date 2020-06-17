@@ -2,7 +2,7 @@ require 'rss'
 require 'open-uri'
 
 class News
-  attr_writer :url
+  attr_reader :url
   def initialize
     @url = 'http://feeds.bbci.co.uk/news/world/rss.xml#'
     @news_item = nil

@@ -1,5 +1,7 @@
 # Telegram_bot(@JelilBot)
 
+![screenshot](./images/tel_bot.gif)
+
 ## Preface
 
 > A telegram bot that can be initialized on the command line(windows) / terminal(mac &amp; linux) where it responds to specific commands - /hello, /quote, or /latest news.
@@ -11,6 +13,7 @@
 - [Preface](#preface)
 - [Purpose](#purpose)
 - [Features](#features)
+- [Presentations](#presentations)
 - [Built With](#built-with)
 - [Quick Start](#quick-start)
 - [Dependencies](#dependencies)
@@ -22,7 +25,29 @@
 
 - The bot has two main features
 - Ability to give you the latest news updates from the BBC website.
-- It also gives motivational quotes with the author's name
+- It also gives motivational quotes with the author's name.
+
+### Commands To Use
+
+```console
+latest news
+```
+
+```console
+quote
+```
+
+```console
+hello
+```
+
+ ```console
+start
+```
+
+## Presentations
+
+- You can watch the [video presentation](https://youtu.be/teb6WqpdRos) here.
 
 ## Built With
 
@@ -33,8 +58,18 @@
 
 ## Quick Start
 
+### How To Get a Local Copy
+
+- Get  a local copy with:
+
+```console
+git clone https://github.com/JelilFaisalAbudu/telegram_bot
+```
+
+Or download it as a [Zip File](https://github.com/JelilFaisalAbudu/telegram_bot/archive/master.zip). using the green button (Clone or Download) on top of this page.
+
 - Install Ruby in your system. To install Ruby, you can read the [Documentation](https://www.ruby-lang.org/en/documentation/installation/)
-- Download it as a [Zip File](https://github.com/JelilFaisalAbudu/telegram_bot/archive/master.zip). If you have installed Git in your system, you can clone it using **git clone** command.
+
 - Navigate to your telegram account if you have one. Or create new telegram account.
 - Create a new bot with the help of BotFather. Use this documentation if you are facing challenges [New Bot](https://core.telegram.org/bots#6-botfather).
 - Obtain your new bot's token.
@@ -46,21 +81,21 @@
 
 variable.
 
-- For Windows users, open Command Prompt and run:
+#### Run on terminal/prompt
 
-  ```console
-  C:\>cd telegram_bot
-  C:\ ../telegram_bot> run ruby bin/main.rb
-  ```
+If you are on windows:
 
-- For Linux and Mac users, open a Terminal and run:
+*- Go inside the project folder
 
-  ```console
-   cd telegram_bot
-   ruby bin/main.rb
-  ```
+*- Right shift '+' right mouse click (Float menu)
 
-- On your telegram account search for your bot's name:
+*- Open prompt here (Option)
+
+```js
+ruby bin/main.rb
+```
+
+- On your telegram account search for your bot's name
 
 - Then press the /START button begin interacting.
 
@@ -79,7 +114,7 @@ Open Command Prompt or Terminal and run:
 gem install Rspec
 ```
 
-Navigate into the spec folder and run the following at the console:
+Navigate into the project folder and run the following command in the console:
 
 ```console
 rspec
