@@ -3,6 +3,7 @@
 require 'telegram_bot'
 require_relative './news.rb'
 require_relative '../lib/quotes.rb'
+require 'dotenv/load'
 
 class Bot
   attr_reader :bot, :get_updates

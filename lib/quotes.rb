@@ -2,8 +2,7 @@ require 'net/http'
 require 'json'
 
 class Quotes
-  @values = nil
-
+  attr_reader :values
   def initialize
     @values = make_request
   end
