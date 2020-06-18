@@ -75,13 +75,7 @@ Or download it as a [Zip File](https://github.com/JelilFaisalAbudu/telegram_bot/
 - Navigate to your telegram account if you have one. Or create new telegram account.
 - Create a new bot with the help of BotFather. Use this documentation if you are facing challenges [New Bot](https://core.telegram.org/bots#6-botfather).
 - Obtain your new bot's token.
-- Go to the Bot class and assign your token to
-
-```console
-  TOKEN
-```
-
-variable.
+- Go to the Bot class and assign your token to ```TEL_BOT_TOKEN``` variable.
 
 #### Run on terminal/prompt
 
