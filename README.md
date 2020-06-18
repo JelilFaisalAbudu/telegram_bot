@@ -4,7 +4,7 @@
 
 ## Preface
 
-> A telegram bot that can be initialized on the command line(windows) / terminal(mac &amp; linux) where it responds to specific commands - /hello, /quote, or /latest news.
+> A telegram bot that can be initialized on the command line(windows) / terminal(mac &amp; linux) where it responds to specific commands - ```/hello```, ```/quote```, or ```/latest news```.
 You can type these commands without prefixing them with the foreward stick(```/```)
 You may search for the bot on telegram with the username @JelilBot.
 
