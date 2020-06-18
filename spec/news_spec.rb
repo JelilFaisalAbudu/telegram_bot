@@ -15,8 +15,8 @@ describe News do
   end
 
   context '#make_request' do
-    it 'returns true for string object of the url' do
-      expect(news.make_request.class).to eql(Array)
+    it 'returns true for RSS request' do
+      expect(news.make_request.class).to eql(RSS::Rss)
     end
   end
 end
